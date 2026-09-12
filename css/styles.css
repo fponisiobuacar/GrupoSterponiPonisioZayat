@@ -1,0 +1,81 @@
+* { 
+   box-sizing: border-box; 
+}
+	body {
+    margin: 0;
+ }	
+ul, ol {
+   padding: 0;
+ }
+li {
+   list-style-type: none; 
+}
+
+a { 
+  text-decoration: none; color: #000; 
+}
+
+header{
+    background-color: black;
+    display: flex; 
+    padding: 0.5% 2%;
+    margin-bottom: 5%;
+}
+
+.userheader{
+     display: flex;
+     gap: 10%;
+}
+.userheader a {
+    color: white;         
+    text-decoration: none;
+   
+}
+
+.buscador {
+    display: flex;
+    align-items: center;
+    width: 40%;
+margin-left: auto;
+}
+
+.buscador input {
+    width: 100%;
+    padding: 5px;
+}
+
+.buscador button {
+    background-color: black;
+    color: #C9A227
+}
+
+.logoclaro img{
+     width: 20%;
+    height: auto;
+}
+
+footer{
+    background-color: black;
+margin-bottom: 0;
+text-decoration: none;
+display: flex;
+}
+
+footer img {
+    width: 20%;
+    height: auto;
+    margin-top: 2%;
+    margin-bottom: 7%;
+}
+
+ul footer{
+    justify-content: center;
+}
+
+ul footer a{
+    color: rgb(244, 242, 242) ;
+}
+
+ul footer p{
+    color: gray ;
+}
