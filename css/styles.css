@@ -22,9 +22,16 @@ header{
     margin-bottom: 5%;
 }
 
-.userheader{
-     display: flex;
-     gap: 10%;
+.userheader {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.navul {
+    display: flex;
+    gap: 20px;
+    padding: 0;
 }
 .userheader a {
     color: white;         
@@ -78,4 +85,7 @@ ul footer a{
 
 ul footer p{
     color: gray ;
+}
+.footer{
+    color:white
 }
