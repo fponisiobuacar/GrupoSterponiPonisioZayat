@@ -3,6 +3,7 @@
 }
 	body {
     margin: 0;
+    background-color: rgb(250, 237, 220);
  }	
 ul, ol {
    padding: 0;
@@ -19,7 +20,6 @@ header{
     background-color: black;
     display: flex; 
     padding: 0.5% 2%;
-    margin-bottom: 5%;
 }
 
 .userheader {
@@ -75,17 +75,44 @@ footer img {
     margin-bottom: 7%;
 }
 
-ul footer{
-    justify-content: center;
+.txtfooter{
+    color:white;
+    justify-content: flex-start;
+    display: flex;
 }
 
-ul footer a{
-    color: rgb(244, 242, 242) ;
+main{
+    padding:2%;
 }
 
-ul footer p{
-    color: gray ;
+.primerafila{
+    display: flex;
+    
 }
-.footer{
-    color:white
+
+.botin1 img{
+   width: 15%;
+    height: auto; 
+}
+
+.botin1 p{
+    width: 15%;
+}
+
+.botin2 img{
+   width: 15%;
+    height: auto; 
+}
+
+.botin2 p{
+    width: 15%;
+}
+
+.botin3 img{
+   width: 15%;
+    height: auto; 
+}
+
+.botin3 p{
+    width: 15%;
 }
