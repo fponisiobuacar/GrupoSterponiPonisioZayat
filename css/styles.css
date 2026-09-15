@@ -88,31 +88,39 @@ main{
 .primerafila{
     display: flex;
     
+    
+}
+
+.botin1{
+    background-color: white;
+    padding: 2%;
+    height: 50%;
+    
 }
 
 .botin1 img{
-   width: 15%;
+   width: 30%;
     height: auto; 
 }
 
 .botin1 p{
-    width: 15%;
+    width: 30%;
 }
 
 .botin2 img{
-   width: 15%;
+   width: 20%;
     height: auto; 
 }
 
 .botin2 p{
-    width: 15%;
+    width: 20%;
 }
 
 .botin3 img{
-   width: 15%;
+   width: 20%;
     height: auto; 
 }
 
 .botin3 p{
-    width: 15%;
+    width: 20%;
 }
