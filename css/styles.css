@@ -19,19 +19,23 @@ a {
 header{
     background-color: black;
     display: flex; 
+    align-items:center;
     padding: 0.5% 2%;
+    height:100px;
 }
 
 .userheader {
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
+    width:40%;
 }
 
 .navul {
     display: flex;
+    flex-direction:row;
     gap: 20px;
     padding: 0;
+    justify-content: center;
 }
 .userheader a {
     color: white;         
@@ -41,9 +45,8 @@ header{
 
 .buscador {
     display: flex;
-    align-items: center;
-    width: 40%;
-margin-left: auto;
+    width: 30%;
+    margin-left: 0;
 }
 
 .buscador input {
@@ -85,42 +88,56 @@ main{
     padding:2%;
 }
 
-.primerafila{
+.fila {
     display: flex;
-    
-    
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
 }
 
-.botin1{
+.fila article {
+    width: 23%;
+    padding: 15px;
     background-color: white;
-    padding: 2%;
-    height: 50%;
-    
 }
 
-.botin1 img{
-   width: 30%;
-    height: auto; 
+.fila img {
+    width: 100%;
+    height: 200px;
 }
 
-.botin1 p{
-    width: 30%;
+.fila p {
+    width: 100%;
 }
 
-.botin2 img{
-   width: 20%;
-    height: auto; 
+.fila h2 {
+    font-size: 20px;
 }
-
-.botin2 p{
-    width: 20%;
+.contenido{
+    display:flex;
+    flex-direction: row;
 }
-
-.botin3 img{
-   width: 20%;
-    height: auto; 
+.contenido aside{
+    width:20%;
+    padding:30px
 }
-
-.botin3 p{
-    width: 20%;
+.contenido main{
+    width:80%;
+    margin: 0px 0px 0px 30px;
+}
+article div p{
+    display:flex;
+    flex-direction:row;
+    background-color: black;
+    color: white;
+    justify-content: center;
+}
+aside nav ul li{
+    padding:5px;
+}
+.precios{
+    color:goldenrod;
+}
+.menshoe{
+    color:goldenrod;
 }
