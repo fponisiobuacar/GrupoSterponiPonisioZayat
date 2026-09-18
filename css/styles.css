@@ -263,12 +263,35 @@ aside nav ul li{
     color: white;
     border: none;
     margin-top: 10px;
+    margin-bottom: 2%;
 }
 
 .tulugar{
     color: goldenrod;
 }
 
-main{
+.mainlogin{
     display: flex;
+}
+
+.mainregister{
+    display: flex;
+}
+
+.registrarme{
+     width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.contraregister{
+    margin-bottom: 2%;
+}
+
+.registerform{
+   padding: 7%;
 }
