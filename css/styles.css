@@ -240,3 +240,35 @@ aside nav ul li{
     list-style-type: disc;
     padding: 5px;
 }
+
+.login{
+    background-color: white;
+    width: 30%;
+    height: auto;
+     margin: 5% auto;
+}
+
+.contralogin{
+    margin-bottom: 2%;
+}
+
+.loginform{
+   padding: 7%;
+}
+
+.ingresar{
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    margin-top: 10px;
+}
+
+.tulugar{
+    color: goldenrod;
+}
+
+main{
+    display: flex;
+}
