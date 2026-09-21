@@ -295,3 +295,46 @@ aside nav ul li{
 .registerform{
    padding: 7%;
 }
+.secind{
+    display:flex;
+    background-color:white;
+    padding:25px;
+}
+.imgindex{
+    display:flex;
+    flex-direction:row;
+    width:500px;
+    height: 300px;
+    margin: 40px 20px 40px 50px;
+}
+.textind{
+    display:flex;   
+    background-color: white;
+    flex-direction: column;
+    margin: 20px 15px 20px 15px;
+}
+.imgportada{
+    width: 55%;
+}
+.text1{
+    color:goldenrod
+}
+.tituind{
+    font-size:50px;
+}
+.text2{
+    color:rgba(0,0,0,0.5 )
+}
+.text3{
+    display:flex;
+    background-color:black;
+    color:white;
+    width:120px;
+    height:45px;
+    align-items:center;
+    justify-content:center;
+}
+.marcasind{
+    display:flex;
+    justify-content:space-between;
+}
