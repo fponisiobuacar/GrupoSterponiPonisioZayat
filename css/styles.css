@@ -33,9 +33,11 @@ header{
 .navul {
     display: flex;
     flex-direction:row;
-    gap: 20px;
     padding: 0;
     justify-content: center;
+}
+.navul li {
+    margin: 0 10px;
 }
 .userheader a {
     color: white;         
@@ -91,12 +93,13 @@ main{
 .fila {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    justify-content: space-between;
     margin-bottom: 20px;
 }
 
 .fila article {
     width: 23%;
+    margin-bottom: 20px;
     padding: 15px;
     background-color: white;
 }
@@ -144,24 +147,23 @@ aside nav ul li{
 .producto {
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    justify-content: space-between;
     margin-top: 30px;
 }
 
 .imagenproducto {
-    width: 50%;
+    width: 48%;
     background-color: white;
     padding: 20px;
 }
 
 .imagenproducto img {
     width: 100%;
-    height: 500px;
-    object-fit: contain;
+    height: auto;
 }
 
 .infoproducto {
-    width: 50%;
+    width: 48%;
     padding: 20px;
 }
 
@@ -176,7 +178,6 @@ aside nav ul li{
 
 .descripcion {
     font-size: 18px;
-    line-height: 1.5;
 }
 
 .infoproducto .precios {
@@ -226,10 +227,6 @@ aside nav ul li{
 
 .detallesproducto h2 {
     font-size: 22px;
-}
-
-.detallesproducto p {
-    line-height: 1.5;
 }
 
 .detallesproducto ul {
