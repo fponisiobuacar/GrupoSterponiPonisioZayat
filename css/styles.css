@@ -20,9 +20,9 @@ a {
 header{
     background-color: black;
     display: flex; 
-    align-items:center;
-    padding: 0.5% 2%;
-    height:100px;
+    align-items: center;
+    padding: 5px 20px;
+    height: 100px;
 }
 
 .userheader {
@@ -43,13 +43,12 @@ header{
 .userheader a {
     color: white;         
     text-decoration: none;
-   
 }
 
 .buscador {
     display: flex;
     width: 30%;
-    margin-left: 0;
+  margin-left: auto;
 }
 
 .buscador input {
@@ -63,8 +62,8 @@ header{
 }
 
 .logoclaro img{
-     width: 20%;
-    height: auto;
+    width: 200px;
+margin-right: 70px;
 }
 
 footer{
@@ -75,16 +74,21 @@ display: flex;
 }
 
 footer img {
-    width: 20%;
-    height: auto;
-    margin-top: 2%;
-    margin-bottom: 7%;
+    width: 200px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    margin-right:250px ;
 }
 
-.txtfooter{
-    color:white;
-    justify-content: flex-start;
+.txtfooter {
+    color: white;
     display: flex;
+    justify-content: center;
+    margin-left: auto;
+}
+
+.footerlinks{
+    margin-top: 10px;
 }
 
 main{
@@ -391,7 +395,7 @@ aside nav ul li{
     }
     .userheader {
         width: 50%;
-        justify-content: space-between;       
+        justify-content:space-between;    
     }
     .buscador {
         width: 50%;
