@@ -1,13 +1,14 @@
 * { 
    box-sizing: border-box; 
+   margin:0;
+   padding:0;
+
 }
 	body {
     margin: 0;
     background-color: rgb(250, 237, 220);
  }	
-ul, ol {
-   padding: 0;
- }
+ 
 li {
    list-style-type: none; 
 }
@@ -300,8 +301,7 @@ aside nav ul li{
 .imgindex{
     display:flex;
     flex-direction:row;
-    width:500px;
-    height: 300px;
+    width:300px;
     margin: 40px 20px 40px 50px;
 }
 .textind{
@@ -334,4 +334,62 @@ aside nav ul li{
 .marcasind{
     display:flex;
     justify-content:space-between;
+}
+
+.resultados{
+    display:flex;
+    flex-direction:row;
+    margin: 20px 0px 20px 0px;
+}
+
+.botinR8{
+    width: 20%;
+    margin: 20px 0px 20px 0px;
+    padding: 10px;
+    background-color: white;
+}
+
+.botinR8 img{
+    width: 100%;
+}
+
+.botinR7{
+    width: 20%;
+    margin: 20px 0px 20px 0px;
+    padding: 10px;
+    background-color: white;
+}
+
+.botinR7 img{
+    width: 100%;
+}
+
+@media (max-width: 420px) {
+    .contenido {
+        flex-direction: column;
+    }
+    .contenido aside {
+        width: 30%;
+        margin-bottom: 20px;
+    }
+    .contenido main {
+        width: 90%;
+        margin: 0;
+    }
+    .fila article {
+        width: 33%;
+    }
+    .userheader {
+        width: 50%;
+        justify-content: space-between;       
+    }
+    .buscador {
+        width: 50%;
+    }
+    .buscador input {
+        width: 70%;
+    }
+    .buscador button {
+        width: 30%;
+    }
 }
