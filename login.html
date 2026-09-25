@@ -52,20 +52,23 @@
         <p class="tulugar">Tu lugar en la cancha</p>
         <h2> Que bueno verte</h2>
         <p>Ingresa tu cuenta</p>
-        <p>Email</p>
-    
     <form class="emaillogin" action="./index.html" method="GET">
-        <input type="text" name="buscar" placeholder="email@gmail.com" required>
+        <div class="campoform">
+            <label for="email-login">Email:</label>
+            <input id="email-login" type="email" name="email"
+                placeholder="email@gmail.com" required>
+        </div>
 
+        <div class="campoform">
+            <label for="clave-login">Contraseña:</label>
+            <input id="clave-login" type="password"
+                placeholder="Tu contraseña" required>
+        </div>
 
-<p>Contraseña</p>
+        <button class="ingresar" type="submit">Ingresar</button>
+    </form>
 
-<input  class="contralogin" type="text" name="buscar" placeholder="Tu contraseña" required>
-
- <button class="ingresar" type="submit">ingresar </button>    
-</form>
-
-<a href="./register.html">No tenes cuenta?</a>
+<a href="./register.html">No tengo cuenta</a>
 
 </div>
 </section>

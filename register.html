@@ -52,25 +52,30 @@
         <p class="tulugar">Sumate al equipo</p>
         <h2> Tu primer toque</h2>
         <p>Crea tu cuenta</p>
-        <p>Email</p>
     
     <form class="emailregister" action="./login.html" method="GET">
-        <input type="text" name="buscar" placeholder="email@gmail.com" required>
+        <div class="campoform">
+            <label for="email-register">Email:</label>
+            <input id="email-register" type="email" name="email"
+                placeholder="email@gmail.com" required>
+        </div>
 
+        <div class="campoform">
+            <label for="clave-register">Contraseña:</label>
+            <input id="clave-register" type="password"
+                placeholder="Tu contraseña" required>
+        </div>
 
-<p>Contraseña</p>
+        <div class="campoform">
+            <label for="repetir-clave">Repetí tu contraseña:</label>
+            <input id="repetir-clave" type="password"
+                placeholder="Repetí tu contraseña" required>
+        </div>
 
- <input class="contraregister" type="text" name="buscar" placeholder="Tu contraseña" required>
+        <button class="registrarme" type="submit">Registrarme</button>
+    </form>
 
-<p>Repeti tu contraseña</p>
-
- <input class="repetiregister "type="text" name="buscar" placeholder="Repeti tu contraseña" required>
-
-  <button class="registrarme" type="submit"> reguistrarme</button>
-</form>  
-
-<a href="./login.html">Tenes cuenta?</a>
-
+    <a href="./login.html">Ya tengo una cuenta</a>
 </div>
 
  

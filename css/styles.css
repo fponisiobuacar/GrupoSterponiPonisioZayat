@@ -246,9 +246,6 @@ aside nav ul li{
      margin: 5% auto;
 }
 
-.contralogin{
-    margin-bottom: 2%;
-}
 
 .loginform{
    padding: 7%;
@@ -275,7 +272,20 @@ aside nav ul li{
 .mainregister{
     display: flex;
 }
+.campoform {
+    display: flex;
+    margin-bottom: 10px;
+}
 
+.campoform label {
+    width: 170px;
+    padding-right: 10px;
+}
+
+.campoform input {
+    width: 200px;
+    padding: 5px;
+}
 .registrarme{
      width: 100%;
     padding: 10px;
