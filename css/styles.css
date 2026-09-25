@@ -406,4 +406,62 @@ aside nav ul li{
     .buscador button {
         width: 30%;
     }
+    header {
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .logoclaro img {
+        width: 100px;
+        margin-right: 10px;
+    }
+    .producto {
+        flex-direction: column;
+    }
+    .imagenproducto,
+    .infoproducto {
+        width: 100%;
+    }
+    .login {
+        width: 90%;
+    }
+    .campoform {
+        flex-direction: column;
+    }
+    .campoform label {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .campoform input {
+        width: 100%;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    footer img {
+        margin-right: 0;
+    }
+    .txtfooter {
+        margin-left: 0;
+    }
+    .secind {
+        flex-direction: column;
+    }
+    .imgportada {
+        width: 100%;
+    }
+    .imgindex {
+        width: 100%;
+        margin: 20px 0;
+    }
+    .marcasind {
+        flex-wrap: wrap;
+    }
+    .resultados {
+        flex-direction: column;
+    }
+    .botinR7,
+    .botinR8 {
+        width: 100%;
+    }
 }
