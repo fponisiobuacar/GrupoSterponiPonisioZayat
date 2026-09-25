@@ -378,6 +378,45 @@ aside nav ul li{
     width: 100%;
 }
 
+.reviews {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: white;
+}
+
+.reviews h2 {
+    font-size: 22px;
+}
+
+.review {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 15px 0;
+}
+
+.reviewheader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reviewusuario {
+    background-color: white;
+    color: black;
+}
+
+.reviewfecha {
+    color: rgba(0,0,0,0.5);
+    background-color: white;
+}
+
+.reviewrating {
+    color: goldenrod;
+    margin: 5px 0;
+}
+
+.reviewtexto {
+    font-size: 16px;
+}
+
 @media (max-width: 420px) {
     .contenido {
         flex-direction: column;
