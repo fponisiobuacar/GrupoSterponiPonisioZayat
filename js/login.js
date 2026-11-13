@@ -14,3 +14,27 @@ formulario.addEventListener('submit', function(e) {
     }
 
 });
+
+
+let loginForm = document.querySelector('.emaillogin');
+let emailLogin = document.querySelector('#email-login');
+let claveLogin = document.querySelector('#clave-login');
+
+loginForm.addEventListener('submit', function(e) {
+
+    if (emailLogin.value == "") {
+        e.preventDefault();
+        alert("El campo email es obligatorio");
+    }
+
+    else if (claveLogin.value == "") {
+        e.preventDefault();
+        alert("El campo contraseña es obligatorio");
+    }
+
+    else if (claveLogin.value.length < 6) {
+        e.preventDefault();
+        alert("La contraseña debe tener al menos 6 caracteres");
+    }
+
+});
