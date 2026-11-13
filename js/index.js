@@ -1,6 +1,3 @@
-let formulario = document.querySelector('.buscador');
-let buscador = document.querySelector('input');
-
 formulario.addEventListener('submit', function(e) {
 
     if (buscador.value == "") {

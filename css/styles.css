@@ -417,6 +417,10 @@ aside nav ul li{
     font-size: 16px;
 }
 
+#bienvenida {
+    color: white;
+}
+
 @media (max-width: 420px) {
     .contenido {
         flex-direction: column;

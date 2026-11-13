@@ -1,16 +1,21 @@
-let formulario = document.querySelector('.buscador');
-let buscador = document.querySelector('input');
+window.addEventListener("load", function () {
 
-formulario.addEventListener('submit', function(e) {
+    let logout = document.querySelector("#logout");
 
-    if (buscador.value == "") {
-        e.preventDefault();
-        alert("El campo de búsqueda está vacío");
+    if (logout == null) {
+        return;
     }
 
-    else if (buscador.value.length < 3) {
-        e.preventDefault();
-        alert("La búsqueda debe tener al menos 3 caracteres");
-    }
+    logout.addEventListener("click", function (evento) {
+        evento.preventDefault();
+
+        localStorage.removeItem("usuario");
+
+        document.querySelector("#bienvenida").style.display = "none";
+        document.querySelector("#li-logout").style.display = "none";
+
+        document.querySelector("#li-login").style.display = "";
+        document.querySelector("#li-registro").style.display = "";
+    });
 
 });
