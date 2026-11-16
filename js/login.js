@@ -1,16 +1,3 @@
-if (formulario != null) {
-    formulario.addEventListener('submit', function(e) {
-        if (buscador.value == "") {
-            e.preventDefault();
-            alert("El campo de búsqueda está vacío");
-        }
-        else if (buscador.value.length < 3) {
-            e.preventDefault();
-            alert("La búsqueda debe tener al menos 3 caracteres");
-        }
-    });
-}
-
 let loginForm = document.querySelector('.emaillogin');
 let emailLogin = document.querySelector('#email-login');
 let claveLogin = document.querySelector('#clave-login');

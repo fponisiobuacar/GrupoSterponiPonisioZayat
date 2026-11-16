@@ -1,23 +1,28 @@
-let formulario = document.querySelector('.buscador');
-let buscador = document.querySelector('.buscador input');
-
-formulario.addEventListener('submit', function(e) {
-
-    if (buscador.value == "") {
-        e.preventDefault();
-        alert("El campo de búsqueda está vacío");
-    }
-
-    else if (buscador.value.length < 3) {
-        e.preventDefault();
-        alert("La búsqueda debe tener al menos 3 caracteres");
-    }
-
-});
-
-
 window.addEventListener("load", function () {
 
+    // ===== Validación del buscador del header =====
+    // Está adentro de la función para que sus variables no choquen
+    // con las de los otros archivos js (login.js, search-results.js, etc.)
+    let formularioBuscador = document.querySelector('.buscador');
+    let inputBuscador = document.querySelector('.buscador input');
+
+    if (formularioBuscador != null) {
+        formularioBuscador.addEventListener('submit', function (e) {
+
+            if (inputBuscador.value == "") {
+                e.preventDefault();
+                alert("El campo de búsqueda está vacío");
+            }
+
+            else if (inputBuscador.value.length < 3) {
+                e.preventDefault();
+                alert("La búsqueda debe tener al menos 3 caracteres");
+            }
+
+        });
+    }
+
+    // ===== Saludo al usuario logueado =====
     let usuario = localStorage.getItem("usuario");
 
     if (usuario != null) {
