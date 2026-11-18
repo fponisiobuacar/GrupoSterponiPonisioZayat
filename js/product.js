@@ -50,6 +50,35 @@ if (idproducto != null) {
             categoria.innerText = data.category;
             categoria.href = "./category.html?categoria=" + data.category;
 
+            let tags = document.querySelector("#product-tags");
+
+        for (let i = 0; i < data.tags.length && i < 3; i++) {
+
+        tags.innerHTML += `<li>${data.tags[i]}</li>`;
+        }
+
+        let reviews = document.querySelector("#lista-reviews");
+
+        for (let i = 0; i < data.reviews.length; i++) {
+
+        reviews.innerHTML += `
+        <article class="review">
+
+            <div class="reviewheader">
+
+                <h3 class="reviewusuario">${data.reviews[i].reviewerName}</h3>
+
+                <p class="reviewfecha">${data.reviews[i].date}</p>
+
+            </div>
+
+            <p class="reviewrating">Rating: ${data.reviews[i].rating}/5</p>
+
+            <p class="reviewtexto">${data.reviews[i].comment}</p>
+
+        </article>`;
+        }
+
         })
         .catch(function(error) {
             console.log("El error es: " + error);
@@ -83,3 +112,4 @@ fetch("https://dummyjson.com/products/categories")
     .catch(function(error) {
         console.log("El error es: " + error);
     });
+
