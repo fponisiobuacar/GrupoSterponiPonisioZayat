@@ -1,8 +1,6 @@
 window.addEventListener("load", function () {
 
-    // ===== Validación del buscador del header =====
-    // Está adentro de la función para que sus variables no choquen
-    // con las de los otros archivos js (login.js, search-results.js, etc.)
+
     let formularioBuscador = document.querySelector('.buscador');
     let inputBuscador = document.querySelector('.buscador input');
 
@@ -22,7 +20,6 @@ window.addEventListener("load", function () {
         });
     }
 
-    // ===== Saludo al usuario logueado =====
     let usuario = localStorage.getItem("usuario");
 
     if (usuario != null) {
