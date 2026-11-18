@@ -15,47 +15,71 @@ formulario.addEventListener('submit', function(e) {
 
 });
 
-let celulares = document.querySelector("#productos-celulares");
-let computadoras = document.querySelector("#productos-computadoras");  
 
-fetch("https://dummyjson.com/products/category/smartphones?limit=10")
+let queryString = location.search;
+let queryStringObj = new URLSearchParams(queryString);
+let idproducto = queryStringObj.get("id");
+
+if (idproducto != null) {
+
+    fetch("https://dummyjson.com/products/" + idproducto)
+        .then(function(response) {
+            return response.json();
+        })
+        .then(function(data) {
+
+            document.querySelector("#product-image").src = data.thumbnail;
+            document.querySelector("#product-image").alt = data.title;
+
+            document.querySelector("#product-title").innerText = data.title;
+
+            document.querySelector("#product-brand").innerText =
+                data.brand ? data.brand : "Sin marca";
+
+            document.querySelector("#product-description").innerText =
+                data.description;
+
+            document.querySelector("#product-price").innerText =
+                "$ " + data.price;
+
+            document.querySelector("#product-stock").innerText =
+                "Stock: " + data.stock;
+
+            let categoria = document.querySelector("#product-category");
+
+            categoria.innerText = data.category;
+            categoria.href = "./category.html?categoria=" + data.category;
+
+        })
+        .catch(function(error) {
+            console.log("El error es: " + error);
+        });
+
+} else {
+    document.querySelector("#product-title").innerText =
+        "No se seleccionó ningún producto";
+}
+
+let listaCategorias = document.querySelector("#lista-categorias");
+
+fetch("https://dummyjson.com/products/categories")
     .then(function(response) {
         return response.json();
     })
     .then(function(data) {
-        for (let i = 0; i < data.products.length; i++) {
-            let productos = data.products[i];
-            celulares.innerHTML += `
-                <div class="producto">
-                    <img src="${productos.images[i]}" alt="${productos.title}">
-                    <h3>${productos.title}</h3>
-                    <p>${productos.description}</p>
-                    <p>$${productos.price.toFixed(2)}</p>
-                </div>
-            `;
-        }       
-    })
-    .catch(function(error) {
-        console.log("el error es: " + error);
-    })
 
-fetch("https://dummyjson.com/products/category/laptops?limit=10")
-    .then(function(response) {
-        return response.json();
-    })
-    .then(function(data) {
-        for (let i = 0; i < data.products.length; i++) {
-            let productos = data.products[i];
-            computadoras.innerHTML += `
-                <div class="producto">
-                    <img src="${productos.images[i]}" alt="${productos.title}">
-                    <h3>${productos.title}</h3>
-                    <p>${productos.description}</p>
-                    <p>$${productos.price.toFixed(2)}</p>
-                </div>
+        for (let i = 0; i < data.length; i++) {
+
+            listaCategorias.innerHTML += `
+                <li>
+                    <a href="./category.html?categoria=${data[i].slug}">
+                        ${data[i].name}
+                    </a>
+                </li>
             `;
         }
+
     })
     .catch(function(error) {
-        console.log("el error es: " + error);
+        console.log("El error es: " + error);
     });

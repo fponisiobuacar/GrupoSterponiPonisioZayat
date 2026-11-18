@@ -123,7 +123,7 @@ if (categoria != null) {
                         <a href="./product.html?id=${productos.id}">
                             <span class="precios">$ ${productos.price}</span>
                             <div>
-                                <p>Ver detalle</p>
+                                <p href="./product.html?id=${productos.id}">Ver detalle</p>
                             </div>
                         </a>
                     </article>
