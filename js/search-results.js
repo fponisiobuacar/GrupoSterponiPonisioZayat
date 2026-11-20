@@ -42,11 +42,15 @@ fetch(url)
 
             for (let i = 0; i < productos.length; i++) {
                 let producto = productos[i];
+                let marca = "";
 
+                if (producto.brand) {
+                marca = producto.brand;
+                }
                 html += `
                 <article>
                     <img src="${producto.thumbnail}" alt="${producto.title}">
-                    <p>${producto.brand ? producto.brand : ""}</p>
+                    <p>${marca}</p>
                     <h2>${producto.title}</h2>
                     <p>${producto.description}</p>
                     <a href="./product.html?id=${producto.id}">
@@ -63,4 +67,28 @@ fetch(url)
     })
     .catch(function(error) {
         console.log("Error: " + error);
+    });
+
+    let listaCategorias = document.querySelector("#lista-categorias");
+
+fetch("https://dummyjson.com/products/categories")
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function(data) {
+
+        for (let i = 0; i < data.length; i++) {
+
+            listaCategorias.innerHTML += `
+                <li>
+                    <a href="./category.html?categoria=${data[i].slug}">
+                        ${data[i].name}
+                    </a>
+                </li>
+            `;
+        }
+
+    })
+    .catch(function(error) {
+        console.log("El error es: " + error);
     });

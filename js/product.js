@@ -33,8 +33,13 @@ if (idproducto != null) {
 
             document.querySelector("#product-title").innerText = data.title;
 
-            document.querySelector("#product-brand").innerText =
-                data.brand ? data.brand : "Sin marca";
+            if (data.brand) {
+            document.querySelector("#product-brand").innerText = data.brand;
+            } 
+            
+            else {
+            document.querySelector("#product-brand").innerText = "Sin marca";
+            }
 
             document.querySelector("#product-description").innerText =
                 data.description;
